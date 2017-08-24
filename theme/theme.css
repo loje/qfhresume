@@ -1,0 +1,136 @@
+body{
+	font-family: "Segoe UI Light","Microsoft Yahei",Arial;
+	/*font-weight: 100;*/
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	background-color: #eee;
+}
+
+.portal-header{
+	padding-bottom: 12px;
+}
+.portal-header .media-right .img{
+	width: 120px;
+	height: 150px;
+	background-color: #333;
+}
+.portal-header .media-body .page-header{
+	margin: 0px;
+	padding: 16px 0;
+	border-bottom: none;
+}
+
+.portal-header .media-body .page-header h2{
+	margin: 0px;
+}
+.portal-header .media-body .page-header h2 small{
+	color: inherit;
+}
+.portal-header .media-body .row{
+	margin: 0px;
+}
+.portal-header .media-body .row .form-group{
+	margin-bottom: 0px;
+	padding: 0px;
+	padding-top: 20px;
+}
+.resume-panel{
+	padding: 15px;
+	margin-bottom: 0px;
+	border:none;
+	box-shadow: none;
+}
+.resume-panel .panel-heading{
+	padding: 5px;
+	border-radius: 0;
+	border:none;
+	border-left: 4px solid #0066cc;
+	letter-spacing: 1px;
+}
+
+.resume-panel .panel-body{
+	padding: 15px 0px;
+}
+
+.resume-panel .panel-body .media .media-left{
+	width: 500px;
+}
+.myresume{
+	margin: 15px auto;
+	/*padding: 0px;*/
+	max-width: 768px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.myresume .portal-header{
+	padding: 10px 15px;
+	border-bottom: 1px dotted #ccc;
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.recruit-job{
+	padding: 5px 10px;
+
+}
+.job-card .media .media-left .img{
+	
+}
+
+@media print{
+	body{
+		font-family: "Segoe UI Light","Microsoft Yahei",Arial;
+		/*font-weight: 100;*/
+		letter-spacing: 1px;
+		-webkit-font-smoothing: antialiased;
+		background-color: #eee;
+	}
+
+	.portal-header{
+		padding-bottom: 12px;
+	}
+	.portal-header .media-right .img{
+		width: 120px;
+		height: 150px;
+		background-color: #333;
+	}
+	.portal-header .media-body .page-header{
+		margin: 0px;
+		padding: 16px 0;
+		border-bottom: none;
+	}
+
+	.portal-header .media-body .page-header h2{
+		margin: 0px;
+	}
+	.portal-header .media-body .row{
+		margin: 0px;
+	}
+	.resume-panel{
+		margin-bottom: 0px;
+		border:none;
+		box-shadow: none;
+	}
+	.resume-panel .panel-heading{
+		border-radius: 0;
+		border:none;
+		background-color: #ddd;
+	}
+
+	.resume-panel .panel-body .media .media-left{
+		width: 500px;
+	}
+	.myresume{
+		margin-bottom: 15px;
+		padding: 10px 15px;
+		background-color: #fff;
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	}
+	.recruit-job{
+		padding: 5px 10px;
+
+	}
+	.job-card .media .media-left .img{
+		
+	}
+}

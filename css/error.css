@@ -1,0 +1,105 @@
+body{
+	height: 100%;
+	background-color: #186aa9;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Segoe UI Light","Microsoft Yahei",Arial;
+	animation: background 4s linear infinite alternate;
+	-webkit-animation: background 4s linear infinite alternate;
+}
+@keyframes background
+{
+0%   {background-color: #186aa9;}
+100% {background-color: #071825;}
+}
+
+
+@-webkit-keyframes background /* Safari 和 Chrome */
+{
+0%   {background-color: #186aa9;}
+100% {background-color: #071825;}
+}
+
+.build{
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+	height: 100%;
+}
+.build .info{
+	padding-top: 20%;
+}
+.build .info h1,
+.build .info p{
+	text-align: center;
+	color: #fff;
+	font-weight: 100;
+	letter-spacing: 6px;
+	text-shadow: 0px 4px 0px rgba(0,0,0,0.25);
+	animation: shadow 4s linear infinite alternate;
+	-webkit-animation: shadow 4s linear infinite alternate;
+}
+
+@keyframes shadow
+{
+0%   {text-shadow: 0px 4px 0px rgba(0,0,0,0.25);}
+100% {text-shadow: 0px 4px 0px rgba(255,255,255,0.25);}
+}
+
+
+@-webkit-keyframes shadow /* Safari 和 Chrome */
+{
+0%   {text-shadow: 0px 4px 0px rgba(0,0,0,0.25);}
+100% {text-shadow: 0px 4px 0px rgba(255,255,255,0.25);}
+}
+
+.earth{
+	position: absolute;
+	margin: 0px auto;
+	width: 100%;
+	background: url(../error/planet.png) center no-repeat;
+	background-size: contain;
+	animation: earth 8s linear infinite;
+	-webkit-animation: earth 8s linear infinite;
+}
+@keyframes earth
+{
+0%   {transform: rotate(360deg);}
+100% {transform: rotate(0deg);}
+}
+
+
+@-webkit-keyframes earth /* Safari 和 Chrome */
+{
+0%   {-webkit-transform: rotate(360deg);}
+100% {-webkit-transform: rotate(0deg);}
+}
+
+
+/*.dog{
+	position: absolute;
+}*/
+.thedog{
+	position: absolute;
+	margin: 0px auto;
+	width: 80px;
+	height: 80px;
+	background: url(../error/dog.png) 0px 0px no-repeat;
+	background-size: cover;
+	z-index: 1;
+	animation: dog .25s ease infinite;
+	-webkit-animation: dog .25s ease infinite;
+}
+@keyframes dog
+{
+0%   {background-image:url(../error/dog1.png);transform: rotate(5deg);}
+100% {background-image:url(../error/dog2.png);transform: rotate(0deg);}
+}
+
+
+@-webkit-keyframes dog /* Safari 和 Chrome */
+{
+0%   {background-image:url(../error/dog1.png);-webkit-transform: rotate(5deg);}
+100% {background-image:url(../error/dog2.png);-webkit-transform: rotate(0deg);}
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>杂草·招聘季</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/swiper.3.1.7.min.css" rel="stylesheet">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default recruit-navbar recruit-navbar-pc">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-logo" href="#">杂草·招聘季</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">深职院2015校招</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="the-user">
+							<a href="#" class="btn user-btn">
+								<span class="user-img" style="background-image:url(img/portal.jpg);"></span>
+								<span class="user-name">刘华清</span>
+							</a>
+							<ul class="user-profile" style="display:none;">
+								<li><a href="#">个人页面</a></li>
+								<!-- <li>
+									<div class="btn-group" role="group" aria-label="...">
+										<a href="#">简历</a>
+										<a href="#">消息</a>
+									</div>
+								</li> -->
+								<li><a href="#">退出</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+
+		<nav class="navbar navbar-default nav-searchbar opacity" style="display:none;">
+			<div class="container">
+				<div class="searchbar">
+			    	<form class="form-group">
+				    	<div class="input-group">
+				    		<input type="text" class="form-control" placeholder="请输入职业、公司、学院或专业名称">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><i class="iconfont">&#xe600;</i></button>
+							</span>
+				    	</div>
+			    	</form>
+		    	</div>
+			</div>
+		</nav>
+
+		<div class="public">
+			<nav class="navbar navbar-default recruit-navbar recruit-navbar-mobile">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a href="#indexNav" type="button" class="navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-logo" href="#">招聘季</a>
+						<a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a>
+					</div>
+				</div><!-- /.container -->
+			</nav>
+			<nav id="indexNav" class="indexnav">
+				<ul class="indexnav-ul">
+					<li class="user-modal">
+						<a href="searchpage.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img" style="background-image:url(img/portal.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h5>刘华清</h5>
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">退出</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<!-- 电脑版页面 -->
+		<div class="user-center user-pc">
+			<div class="user-top">
+				<div class="container">
+					<div class="swiper-container swiper-home">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide swiper1">
+					        	<a href="#" style="background-image:url(img/banner1.jpg);"></a>
+					        </div>
+					        <div class="swiper-slide swiper2">
+					        	<a href="#" style="background-image:url(img/banner2.jpg);"></a>
+					        </div>
+					        <div class="swiper-slide swiper3">
+					        	<a href="#" style="background-image:url(img/banner3.jpg);"></a>
+					        </div>
+					    </div>
+
+					    <div class="swiper-pagination"></div>
+					</div>		
+				</div>
+			</div>
+			<div class="user-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 user-function-title">
+							<h4>我的简历作品</h4>
+						</div>
+						<div class="col-lg-10 col-md-10 col-sm-9 user-function user-work-function">
+							<ul class="media-list">
+								<li class="media upload-list">
+									<div class="user-work-upload" data-toggle="modal" data-target="#workload">
+										<div class="work-upload-table">
+											<div class="work-upload-td">
+												<h4>添加作品</h4>
+												<p>（最多还能上传<span></span>个）</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Modal -->
+									<div class="modal fade workload" id="workload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="modal-table">
+											<div class="modal-td">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+															<h4 class="modal-title" id="myModalLabel">上传作品</h4>
+														</div>
+														<div class="modal-body">
+															<div class="row">
+																<div class="col-xs-4 upload-img">
+																	<div class="img"id="imgPreview">
+																		<input type="file" id="imgicon" class="form-control">
+																	</div>
+																</div>
+																<div class="col-xs-8 upload-c">
+																	<input type="text" class="form-control work-name" placeholder="请输入作品名称">
+																	<input type="text" class="form-control work-url" placeholder="若有，请告知作品线上地址">
+																	<textarea type="text" class="form-control work-info" placeholder="请输入作品描述"></textarea>
+																	<p><i class="iconfont">&#xe602;</i> 缩略图尺寸约为1:1.2，最大不超过500KB</p>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+															<button type="button" class="btn workload-submit">上传</button>
+															<div class="progress">
+																<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+															    <span class="sr-only">45% Complete</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<div class="img"></div>
+									</div>
+									<div class="media-body">
+										<h4>作品名称</h4>
+										<p>作品描述</p>
+										<span class="close" data-toggle="tooltip" data-placement="left" title="删除该作品">×</span>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left">
+										<div class="img"></div>
+									</div>
+									<div class="media-body">
+										<h4>作品名称</h4>
+										<p><span>线上地址：www.baidu.com</span></p>
+										<p>作品描述</p>
+										<span class="close" data-toggle="tooltip" data-placement="left" title="删除该作品">×</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 右边栏——个人中心 -->
+						<div class="col-lg-2 col-md-2 col-sm-3 user-sider">
+							<div class="user-collect-sider">
+								<div class="thumbnail" href="#">
+									<div class="thumbnail-table">
+										<div class="thumbnail-td">
+											<div class="user-headportal" style="background-image:url(img/portal.jpg);"></div>
+											<p>刘华清</p>
+											<p><a href="#" class="back-usercenter"><i class="iconfont">&#xe604;</i> 回个人中心</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="user-collect-sider-list">
+									<a href="#" class="media">
+										<div class="media-left">
+											<i class="iconfont">&#xe60a;</i>
+										</div>
+										<div class="media-body">
+											<p>投递简历</p>
+										</div>
+									</a>
+									<a href="#" class="media">
+										<div class="media-left">
+											<i class="iconfont">&#xe60c;</i>
+										</div>
+										<div class="media-body">
+											<p>收藏职位</p>
+										</div>
+									</a>
+									<a href="#" class="media">
+										<div class="media-left">
+											<i class="iconfont">&#xe60b;</i>
+										</div>
+										<div class="media-body">
+											<p>订阅职位</p>
+										</div>
+									</a>
+									<a href="#" class="media">
+										<div class="media-left">
+											<i class="iconfont">&#xe60e;</i>
+										</div>
+										<div class="media-body">
+											<p>作品展示</p>
+										</div>
+									</a>
+									<a href="#" class="media">
+										<div class="media-left">
+											<i class="iconfont">&#xe60f;</i>
+										</div>
+										<div class="media-body">
+											<p>职业测评</p>
+										</div>
+									</a>
+									<a href="#" class="backtop">
+										返回顶部
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 移动版页面 -->
+		<div class="user-center user-mobile">
+			<div class="user-top">
+				<!-- 如果需要登录，则链接到login.html，登陆后则不需要链接到login.html -->
+				<a href="login.html" class="media">
+					<div class="media-left">
+						<div class="uesr-img" style="background-image:url(img/user_logo.png);"></div>
+					</div>
+					<div class="media-body">
+						<span>请登录</span>
+					</div>
+				</a>
+			</div>
+
+			<div class="user-function-box user-work-box">
+				<h4><i class="iconfont">&#xe60e;</i> 我的简历作品</h4>
+				<p><span>手机版暂不支持编辑作品模块<br/>请在电脑上登录www.qifanhui.cn编辑</span></p>
+
+				<div class="thumbnail">
+					<div class="work-img"></div>
+					<div class="caption">
+						<h4>作品名称</h4>
+						<p>作品简介</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="work-img"></div>
+					<div class="caption">
+						<h4>作品名称</h4>
+						<p><span>www.baidu.com</span></p>
+						<p>作品简介</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="work-img"></div>
+					<div class="caption">
+						<h4>作品名称</h4>
+						<p>作品简介</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.2.1.4.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/swiper.3.1.7.jquery.min.js"></script>
+		<script src="js/jquery.mmenu.min.all.js"></script>
+		<script src="js/PCASClass.js"></script>
+		<script src="js/default.js"></script>
+	</body>
+</html>

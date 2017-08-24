@@ -1,0 +1,202 @@
+(function($,h,c){var a=$([]),e=$.resize=$.extend($.resize,{}),i,k="setTimeout",j="resize",d=j+"-special-event",b="delay",f="throttleWindow";e[b]=250;e[f]=true;$.event.special[j]={setup:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.add(l);$.data(this,d,{w:l.width(),h:l.height()});if(a.length===1){g()}},teardown:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.not(l);l.removeData(d);if(!a.length){clearTimeout(i)}},add:function(l){if(!e[f]&&this[k]){return false}var n;function m(s,o,p){var q=$(this),r=$.data(this,d);r.w=o!==c?o:q.width();r.h=p!==c?p:q.height();n.apply(this,arguments)}if($.isFunction(l)){n=l;return m}else{n=l.handler;l.handler=m}}};function g(){i=h[k](function(){a.each(function(){var n=$(this),m=n.width(),l=n.height(),o=$.data(this,d);if(m!==o.w||l!==o.h){n.trigger(j,[o.w=m,o.h=l])}});g()},e[b])}})(jQuery,this); 
+
+
+$(document).ready(function () {
+	$('nav#menu').mmenu();
+	$('nav#indexNav').mmenu();
+
+	var mySwiper = new Swiper ('.swiper-home', {
+		direction: 'horizontal',
+		loop: true,
+		autoplay:2000,
+		// 如果需要分页器
+		pagination: '.swiper-pagination',
+	});
+
+	$(".szptcollege .tab-pane .media .media-left .img").height($(".szptcollege .tab-pane .media .media-body").height());
+	$(".szptcollege .tab-pane .media .media-left .img").width($(".szptcollege .tab-pane .media .media-body").height());
+
+	$("a.searchbar-logo").click(function(){
+		$(".nav-searchbar").removeClass("opacity");
+		$(".nav-searchbar").removeAttr("style");
+	});
+	$(".nav-searchbar").mouseleave(function(){
+		$(".nav-searchbar").addClass("opacity");
+		setTimeout(function(){
+			$(".nav-searchbar").attr("style","display:none;");
+		},250);
+	})
+	$("li a").click(function(){
+		setTimeout(function(){
+			$(".cop-info").attr("style","opacity: 1;");
+		},100);	
+		console.log("赋予高度");
+	});
+
+	$(".cop-side .thumbnail .img").height($(".cop-side .thumbnail .img").width());
+	$(window).resize(function(){
+		$(".cop-side .thumbnail .img").height($(".cop-side .thumbnail .img").width());
+	})
+
+	$(".tree-memu").mouseover(function(){
+		$(this).find(".ul-hover").removeAttr("style");
+	});
+	$(".tree-memu").mouseleave(function(){
+		$(this).find(".ul-hover").attr("style","display:none;");
+	});
+
+
+	$(".local-college").mouseover(function(){
+		$(".city-list-page").attr("style","display:none;");
+		$(".college-list-page").removeAttr("style");
+		$(".college-list .media .media-left .img").height($(".college-list .media .media-body").height());
+		$(".college-list .media .media-left .img").width($(".college-list .media .media-body").height());
+	});
+	$(".college-list-page").mouseleave(function(){
+		$(".college-list-page").attr("style","display:none;");
+	});
+
+	$(".local-area").mouseover(function(){
+		$(".college-list-page").attr("style","display:none;");
+		$(".city-list-page").removeAttr("style");
+		$(".city-list-page .container .row .the-city a.thumbnail").height($(".city-list-page .container .row .the-city a.thumbnail").width());
+	});
+	$(".city-list-page").mouseleave(function(){
+		$(".city-list-page").attr("style","display:none;");
+	});
+
+	$(".search-card .media .media-left .img").height($(".search-card .media .media-body").height());
+	$(".search-card .media .media-left .img").width($(".search-card .media .media-body").height());
+
+	//异步加载职位
+	$(".loadingmore").click(function(){
+		//$(this).text("加载中...");
+
+		var mor = "";
+
+		//setTimeout(function(){
+		$.ajax({
+            url: 'data.php',
+            dataType: 'json',
+            success: function(data) {
+            	console.log(data);
+				var jobhtml = $(".jobhtml").html();
+				var jobhtml1 = $(".addjob").html();
+				var rep = "";
+				if(data == null){
+					console.log(data);
+				}else{
+					rep += jobhtml.replace("{0}","../qfhresume");
+					rep = rep.replace("{1}","img/bilibili-logo.jpg");
+					rep = rep.replace("{2}",data.job_name);
+					rep = rep.replace("{3}",data.job_money);
+					rep = rep.replace("{4}",data.area);
+					rep = rep.replace("{5}",data.company);
+				}
+
+                $(".addjob").append(rep);
+            }
+			//$(".loadingmore").text("加载更多");
+		});
+		//},2000);
+	});
+
+
+	$(".recruit-pc-left .thumbnail .img").width($(".recruit-pc-left .thumbnail .caption").width());
+	$(".recruit-pc-left .thumbnail .img").height($(".recruit-pc-left .thumbnail .caption").width());
+	$(window).resize(function(){
+		$(".recruit-pc-left .thumbnail .img").width($(".recruit-pc-left .thumbnail .caption").width());
+		$(".recruit-pc-left .thumbnail .img").height($(".recruit-pc-left .thumbnail .caption").width());
+	});
+
+
+	$(".job-search-result .navbar .container-fluid .collapse .nav .dropdown .dropdown-menu li a").click(function(){
+		$(this).parent().parent().prev().html($(this).text() + " <span class='caret'></span>");
+	});
+
+	$(".card-list a.media .media-right .img").width($(".card-list a.media .media-body").height());
+	$(".card-list a.media .media-right .img").height($(".card-list a.media .media-body").height());
+
+	$(".search-tools .screen ul.nav li.dropdown a.dropdown-toggle").click(function(){
+		$(".darkbg").removeAttr("style");
+
+		$(".search-tools .screen ul.nav li.dropdown a.dropdown-toggle").removeAttr("style");
+		$(this).attr("style","font-weight:700;");
+
+		var hh =  parseInt($(".recruit-navbar").height()) + parseInt($(".search-page .container .search-tools").height() + 20);
+		$(".darkbg").attr("style","top:"+ hh + "px");
+
+		if($(this).parent().hasClass("open") == true ){
+			$(".darkbg").attr("style","display:none;");
+			$(this).removeAttr("style");
+		}
+	});
+	$(".darkbg").click(function(){
+		if($(".search-tools .screen ul.nav li.dropdown").hasClass("open") == true ){
+			$(".darkbg").attr("style","display:none;");
+		}
+	});
+	$(".recruit-navbar").click(function(){
+		$(".darkbg").attr("style","display:none;");
+	});
+	$(".nav-searchbar").click(function(){
+		$(".darkbg").attr("style","display:none;");
+	});
+	$(".dropdown-menu").click(function(){
+		$(".darkbg").attr("style","display:none;");
+	});
+
+
+
+	$(".search-tools .screen ul.nav li.dropdown ul.dropdown-menu li a").click(function(){
+		alert($(this).html());
+		alert($(this).parent().prev().html());
+		//alert($(this).parent().parent().prev().html());
+		$(this).parent().parent().prev().html($(this).html() + " <span class='caret'></span>");
+	});
+
+	$(".login-box").height($(window).height());
+
+	$(".login-pc").click(function(){
+		$(".loginpcmodal").removeAttr("style");
+	});
+
+	$(".jqcolse").click(function(){
+		setTimeout(function(){
+			$(".loginpcmodal").attr("style","display:none;");
+			$(".recruit-navbar-pc").removeClass("homepcbur");
+			$(".home-banner").removeClass("homepcbur");
+			$(".home-recruit-pc").removeClass("homepcbur");
+		},500);
+	});
+
+
+	$('#loginpcModal').on('hidden.bs.modal', function (e) {
+		$(".loginpcmodal").attr("style","display:none;");
+		$(".recruit-navbar-pc").removeClass("homepcbur");
+		$(".home-banner").removeClass("homepcbur");
+		$(".home-recruit-pc").removeClass("homepcbur");
+	})
+
+
+	$(".login-pc").click(function(){
+		$(".recruit-navbar-pc").addClass("homepcbur");
+		$(".home-banner").addClass("homepcbur");
+		$(".home-recruit-pc").addClass("homepcbur");
+	});
+
+	$(".setupbtn").click(function(){
+		$(".pctowechat").attr("style","height:100px;");
+	});
+
+
+	//校招企业名录
+	$(".company-logo").height($(".company-logo").width());
+	$(window).resize(function(){
+		$(".cop-list-more a.thumbnail").height($(".cop-list-more a.thumbnail").width());
+		$(".company-logo").height($(".company-logo").width());
+	});
+
+	$(".cop-mobile-list a.cop-list .media .media-left .img").height($(".cop-mobile-list a.cop-list .media .media-left").height() + 20);
+	$(".cop-mobile-list a.cop-list .media .media-left .img").width($(".cop-mobile-list a.cop-list .media .media-left").height());
+})

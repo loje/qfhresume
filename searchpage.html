@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>招聘季</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/swiper.3.1.7.min.css" rel="stylesheet">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default recruit-navbar recruit-navbar-pc">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-logo" href="#">招聘季</a>
+					<a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">校招</a></li>
+						<!-- <li><a href="#">登录</a></li> -->
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<nav class="navbar navbar-default nav-searchbar opacity" style="display:none;">
+			<div class="container">
+				<div class="searchbar">
+			    	<form class="form-group">
+			    		<div class="input-group">
+				    		<input type="text" class="form-control" >
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><i class="iconfont">&#xe600;</i></button>
+							</span>
+				    	</div>
+			    	</form>
+		    	</div>
+			</div>
+		</nav>
+
+		<!-- 移动端 -->
+		<div class="search-page">
+			<nav class="navbar navbar-default recruit-navbar recruit-navbar-mobile">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a href="#indexNav" type="button" class="navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-logo" href="#">招聘季</a>
+						<a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a>
+					</div>
+				</div><!-- /.container -->
+			</nav>
+			<nav id="indexNav" class="indexnav">
+				<ul class="indexnav-ul">
+					<li>
+						<a href="searchpage.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img" style="background-image:url(img/portal.jpg)"></div>
+							</div>
+							<div class="media-body">
+								<h5>刘华清</h5>
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li><a href="index.html">校招</a></li>
+				</ul>
+			</nav>
+			<div class="container tools-bar">
+				<div class="search-tools">
+					<div class="screen">
+						<div class="row">
+							<div class="col-xs-6 select-option">
+								<span>月薪</span>
+								<select>
+									<option>不限</option>
+									<option>2K以下</option>
+									<option>2K-5K</option>
+									<option>5K-10K</option>
+									<option>10K-15K</option>
+									<option>15K-25K</option>
+									<option>25K-50K</option>
+									<option>50K以上</option>
+								</select>
+							</div>
+
+							<div class="col-xs-6 select-option">
+								<span>排序</span>
+								<select>
+									<option>最近招聘</option>
+									<option>最早招聘</option>
+								</select>
+							</div>
+
+							<div class="col-xs-6 select-option">
+								<span>工作地点</span>
+								<select>
+									<option>全部</option>
+									<option>北京</option>
+									<option>上海</option>
+									<option>广州</option>
+									<option>深圳</option>
+									<option>其他</option>
+								</select>
+							</div>
+
+							<div class="col-xs-6 select-option">
+								<span>学历要求</span>
+								<select>
+									<option>全部</option>
+									<option>本科</option>
+									<option>大专</option>
+									<option>中专</option>
+									<option>其他</option>
+								</select>
+							</div>
+						</div>
+						<!-- <ul class="nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">月薪  <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">不限</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">2K以下</a></li>
+									<li><a href="#">2K-5K</a></li>
+									<li><a href="#">5K-10K</a></li>
+									<li><a href="#">10K-15K</a></li>
+									<li><a href="#">15K-25K</a></li>
+									<li><a href="#">25K-50K</a></li>
+									<li><a href="#">50K以上</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">排序  <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">最近招聘</a></li>
+									<li><a href="#">最早招聘</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">工作地点  <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">全部</a></li>
+									<li><a href="#">北京</a></li>
+									<li><a href="#">上海</a></li>
+									<li><a href="#">广州</a></li>
+									<li><a href="#">深圳</a></li>
+									<li><a href="#">其他</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">学历要求  <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">不限</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">本科</a></li>
+									<li><a href="#">大专</a></li>
+									<li><a href="#">中专</a></li>
+									<li><a href="#">其他</a></li>
+								</ul>
+							</li>
+							<div class="darkbg" style="display:none;"></div>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="recruit-job addjob">
+					<a href="recruitpage.html" class="search-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+
+					<a href="recruitpage.html" class="search-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+
+					<a href="recruitpage.html" class="search-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+
+					<a href="recruitpage.html" class="search-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+				</div>
+				<button class="btn loadingmore">加载更多</button>
+			</div>
+		</div>
+
+		<!-- PC端 -->
+		<div class="search-page-pc">
+			<div class="container">
+				<div class="job-searchbar">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="请输入职业、公司、学院或专业名称">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">搜索职位</button>
+						</span>
+					</div><!-- /input-group -->
+				</div>
+
+				<div class="job-search-result">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav ">
+									<li class="dropdown">
+										<span>月薪:</span>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">请选择 <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">不限</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">2K以下</a></li>
+											<li><a href="#">2K-5K</a></li>
+											<li><a href="#">5K-10K</a></li>
+											<li><a href="#">10K-15K</a></li>
+											<li><a href="#">15K-25K</a></li>
+											<li><a href="#">25K-50K</a></li>
+											<li><a href="#">50K以上</a></li>
+										</ul>
+									</li>
+
+									<li class="dropdown">
+										<span>排序:</span>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">请选择 <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">最近招聘</a></li>
+											<li><a href="#">最早招聘</a></li>
+										</ul>
+									</li>
+
+									<li class="dropdown">
+										<span>工作地点:</span>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">请选择 <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">北京</a></li>
+											<li><a href="#">上海</a></li>
+											<li><a href="#">广州</a></li>
+											<li><a href="#">深圳</a></li>
+											<li><a href="#">其他</a></li>
+										</ul>
+									</li>
+
+									<li class="dropdown">
+										<span>学历要求:</span>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">请选择 <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">本科</a></li>
+											<li><a href="#">大专</a></li>
+											<li><a href="#">中专</a></li>
+											<li><a href="#">其他</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- <p>目前共有250个职位招聘中</p> -->
+						</div>
+					</nav>
+					<div class="search-result-card">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 card-list">
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+								<a href="#" class="media">
+									<div class="media-body">
+										<h4 class="media-heading">风控经理—用户端风险管理</h4>
+										<span class="label label-danger"><i class="iconfont">&#xe601;</i> 深圳</span>
+										<span class="money">15k-25k</span>
+										<p>北京小米科技有限责任公司 <span>快速成长</span><span>免费班车</span><span>扁平管理</span><span>技能培训</span></p>
+									</div>
+									<div class="media-right">
+										<div class="img" style="background-image:url(img/mi.jpg);"></div>
+									</div>
+								</a>
+							</div>
+							<!-- <div class="col-lg-3 col-md-3 col-sm-3"></div> -->
+						</div>
+						<nav>
+							<ul class="pagination">
+								<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+								<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 职位模板 -->
+		<div class="jobhtml" style="display:none;">
+			<a href="{0}" class="search-card">
+				<div class="media">
+					<div class="media-left">
+						<div class="img" style="background-image:url({1});"></div>
+					</div>
+					<div class="media-body">
+						<h4>{2}</h4>
+						<p>{3}</p>
+					</div>
+				</div>
+				<p>{4} | {5}</p>
+			</a>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.2.1.4.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/swiper.3.1.7.jquery.min.js"></script>
+		<script src="js/jquery.mmenu.min.all.js"></script>
+		<script src="js/default.js"></script>
+	</body>
+</html>

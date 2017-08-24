@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>招聘季</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/swiper.3.1.7.min.css" rel="stylesheet">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default recruit-navbar recruit-navbar-pc">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-logo" href="#">杂草·招聘季</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">深职院2015校招</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<!-- <li>
+							<a href="#" class="local-area">地区选择</a>
+						</li> -->
+						<li>
+							<a href="#" class="login-pc" data-toggle="modal" data-target="#loginpcModal">登录</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+
+		<nav class="navbar navbar-default nav-searchbar opacity" style="display:none;">
+			<div class="container">
+				<div class="searchbar">
+			    	<form class="form-group">
+				    	<div class="input-group">
+				    		<input type="text" class="form-control" placeholder="请输入职业、公司、学院或专业名称">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><i class="iconfont">&#xe600;</i></button>
+							</span>
+				    	</div>
+			    	</form>
+		    	</div>
+			</div>
+		</nav>
+
+		<div class="mobile-bar">
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<div class="btn-group" role="group">
+					<a href="#" type="button" class="btn btn-default">招聘</a>
+				</div>
+				<div class="btn-group" role="group">
+					<a href="#" type="button" class="btn btn-default">搜索</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="home-banner">
+			<nav class="navbar navbar-default recruit-navbar recruit-navbar-mobile">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a href="#indexNav" type="button" class="navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-logo" href="#">招聘季</a>
+						<!-- <a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a> -->
+					</div>
+				</div><!-- /.container -->
+			</nav>
+			<nav id="indexNav" class="indexnav">
+				<ul class="indexnav-ul">
+					<li class="login-modal">
+						<a href="login.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img"></div>
+							</div>
+							<div class="media-body">
+								<h5>游客</h5>
+								<p>登录 / 注册</p>
+							</div>
+						</a>
+					</li>
+					<li class="user-modal" style="display:none;">
+						<a href="searchpage.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img" style="background-image:url(img/portal.jpg)"></div>
+							</div>
+							<div class="media-body">
+								<h5>刘华清</h5>
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+				</ul>
+			</nav>
+			<div class="college-list-page" style="display:none;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/dianxin.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">电子与通信工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jisuanji.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">计算机工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jidian.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">机电工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">经济学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/guanli.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">管理学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/chuanbo.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">传播工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/yishu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">艺术设计学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/waiyu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">应用外国语学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/huasheng.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">应用化学与生物技术学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jianhuan.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">建筑与环境工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/donghua.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">数字创意与动画学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">汽车与交通学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/yihu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">医学技术与护理学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 college-list">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">人文学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="city-list-page" style="display:none;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 the-city">
+							<a href="#" class="btn">
+								<span>北京</span>
+							</a>
+							<ul>
+								<li><a href="#">UI设计师</a></li>
+								<li><a href="#">销售代表</a></li>
+								<li><a href="#">银行大堂经理</a></li>
+								<li><a href="#">导游</a></li>
+								<li><a href="#">JAVA开发工程师</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 the-city">
+							<a href="#" class="btn">
+								<span>上海</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 the-city">
+							<a href="#" class="btn">
+								<span>广州</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 the-city">
+							<a href="#" class="btn">
+								<span>深圳</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-container swiper-home">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide swiper1">
+			        	<a href="#" style="background-image:url(img/banner1.jpg);"></a>
+			        </div>
+			        <div class="swiper-slide swiper2">
+			        	<a href="#" style="background-image:url(img/banner2.jpg);"></a>
+			        </div>
+			        <div class="swiper-slide swiper3">
+			        	<a href="#" style="background-image:url(img/banner3.jpg);"></a>
+			        </div>
+			    </div>
+
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<!-- PC端页面 -->
+		<div class="container home-recruit home-recruit-pc">
+			<div class="row ">
+				<div class="col-lg-3 col-md-4 col-sm-4 recruit-pc-left">
+					<div class="thumbnail">
+						<div class="img" style="background-image:url(img/wechat_qrcode.png);"></div>
+						<div class="caption">
+							<p>扫一扫，关注【杂草】</p>
+						</div>
+					</div>
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#east" aria-controls="east" role="tab" data-toggle="tab">东区</a></li>
+						<li role="presentation"><a href="#west" aria-controls="west" role="tab" data-toggle="tab">西区</a></li>
+						<li role="presentation"><a href="#north" aria-controls="north" role="tab" data-toggle="tab">北区</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content szptcollege">
+						<div role="tabpanel" class="tab-pane east active" id="east">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/dianxin.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">电子与通信工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jisuanji.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">计算机工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jidian.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">机电工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jianhuan.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">建筑与环境工程学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/qiche.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">汽车与交通学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div role="tabpanel" class="tab-pane west" id="west">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jingji.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">经济学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/guanli.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">管理学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/meiti.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">媒体与传播学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/yishu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">艺术设计学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/waiyu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">应用外国语学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/huasheng.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">应用化学与生物技术学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/donghua.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">数字创意与动画学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/renwen.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">人文学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+						<div role="tabpanel" class="tab-pane north" id="north">
+							<a href="#" class="media">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/yihu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">医学技术与护理学院</h4>
+									<p>共0个职位</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-8 col-sm-8 recruit-pc-right">
+					<div class="job-searchbar">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="请输入职业、公司、学院或专业名称">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">搜索职位</button>
+							</span>
+						</div><!-- /input-group -->
+					</div>
+
+					<div class="well mr_remind">
+						<h3>找工作是件需要深思熟虑的事</h3>
+						<p>使用在线简历进行投递将提高你获得面试邀请的几率</p>
+						<a href="#" class="btn btn-success mr_ms">完善我的简历</a>
+						<i class="mr_del"></i>
+					</div>
+
+					<div class="job-news">
+						<div class="page-header">
+							<span>最新职位</span>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 news-card">
+								<a href="recruitpage.html" class="card-contact">
+									<div class="media">
+										<div class="media-left">
+											<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+										</div>
+										<div class="media-body">
+											<h4>网页设计师</h4>
+											<p>￥3K-5K</p>
+										</div>
+									</div>
+									<p>上海 | 上海幻电信息科技有限公司</p>
+								</a>				
+							</div>
+						</div>
+						<button class="btn more-job">更多职位</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 移动端页面 -->
+		<div class="container home-recruit home-recruit-mobile">
+			<div class="row addjob">
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+					<a href="recruitpage.html" class="job-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+					<a href="recruitpage.html" class="job-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+					<a href="recruitpage.html" class="job-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+					<a href="recruitpage.html" class="job-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+					<a href="recruitpage.html" class="job-card">
+						<div class="media">
+							<div class="media-left">
+								<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							</div>
+							<div class="media-body">
+								<h4>网页设计师</h4>
+								<p>￥3K-5K</p>
+							</div>
+						</div>
+						<p>上海 | 上海幻电信息科技有限公司</p>
+					</a>
+				</div>
+
+			</div>
+			<button class="btn loadingmore">加载更多</button>
+		</div>
+		<!-- Modal -->
+		<div class="loginpcmodal" style="display:none;">
+			<div class="loginpcmodal-tr">
+				<div class="modal fade loginpcbox" id="loginpcModal" tabindex="-1" role="dialog" aria-labelledby="loginpcModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<form>
+								<div class="modal-header">
+									<button type="button" class="close jqcolse" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+								</div>
+								<div class="modal-footer">
+									<!-- <button type="button" class="btn btn-default colsebtn jqcolse" data-dismiss="modal">Close</button> -->
+									<button type="button" class="btn btn-primary savebtn jqcolse">登录</button>
+									<a href="#" class="setupbtn"><i class="iconfont">&#xe605;</i> 我要注册</a>
+								</div>
+							</form>
+							<div class="pctowechat">
+								<p>打开微信扫一扫授权，注册并完善用户信息</p>
+								<div class="loginqrcode"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 职位模版 -->
+		<div class="jobhtml" style="display:none;">
+			<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+				<a href="{0}" class="job-card">
+					<div class="media">
+						<div class="media-left">
+							<div class="img" style="background-image:url({1});"></div>
+						</div>
+						<div class="media-body">
+							<h4>{2}</h4>
+							<p>{3}</p>
+						</div>
+					</div>
+					<p>{4} | {5}</p>
+				</a>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.2.1.4.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/swiper.3.1.7.jquery.min.js"></script>
+		<script src="js/jquery.mmenu.min.all.js"></script>
+		<script src="js/default.js"></script>
+	</body>
+</html>

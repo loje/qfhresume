@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>招聘季</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/swiper.3.1.7.min.css" rel="stylesheet">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default recruit-navbar recruit-navbar-pc">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-logo" href="#">招聘季</a>
+					<a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">校招</a></li>
+						<!-- <li><a href="#">登录</a></li> -->
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		<nav class="navbar navbar-default nav-searchbar opacity" style="display:none;">
+			<div class="container">
+				<div class="searchbar">
+			    	<form class="form-group">
+			    		<div class="input-group">
+				    		<input type="text" class="form-control" >
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><i class="iconfont">&#xe600;</i></button>
+							</span>
+				    	</div>
+			    	</form>
+		    	</div>
+			</div>
+		</nav>
+
+		<!-- 移动端 -->
+		<div class="recruit-page">
+			<nav class="navbar navbar-default recruit-navbar recruit-navbar-mobile">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a href="#indexNav" type="button" class="navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-logo" href="#">招聘季</a>
+						<a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a>
+					</div>
+				</div><!-- /.container -->
+			</nav>
+			<nav id="indexNav" class="indexnav">
+				<ul class="indexnav-ul">
+					<li>
+						<a href="searchpage.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img" style="background-image:url(img/portal.jpg)"></div>
+							</div>
+							<div class="media-body">
+								<h5>刘华清</h5>
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li><a href="index.html">校招</a></li>
+				</ul>
+			</nav>
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#recruitinfo" aria-controls="recruitcop" role="tab" data-toggle="tab">招聘信息</a></li>
+				<li role="presentation"><a href="#recruitcop" aria-controls="recruitcop" role="tab" data-toggle="tab">公司介绍</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane recruitinfo active" id="recruitinfo">
+					<div class="cop-info" style="opacity: 1;">
+						<div class="the-cop">
+							<div class="cop-logo" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							<div class="cop-name">上海幻电信息技术有限公司</div>
+							<p><a href="#otherjob">目前2个职位招聘中</a></p>
+						</div>
+						<div class="cop-background" style="background-image:url(img/bilibili-logo.jpg);"></div>
+					</div>
+					<div class="other-job" id="otherjob">
+						<h5><i class="iconfont">&#xe602;</i> 目前在招</h5>
+						<a href="#" class="job">
+							<h4>网页设计师</h4>
+							<p>深圳 | 3k~5k</p>
+						</a>
+						<a href="#" class="job">
+							<h4>UI设计师</h4>
+							<p>深圳 | 3k~5k</p>
+						</a>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane recruitcop" id="recruitcop">
+					<div class="cop-info">
+						<div class="the-cop">
+							<div class="cop-logo" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							<div class="cop-name">上海幻电信息技术有限公司</div>
+							<p><a href="#otherjob">目前2个职位招聘中</a></p>
+						</div>
+						<div class="cop-background" style="background-image:url(img/bilibili-logo.jpg);"></div>
+					</div>
+
+					<div class="cop-intro">
+						<p>地点 上海市浦东新区国际航运金融大厦</p>
+						<p>E-MAIL job@bilibili.com</p>
+						<p>联系电话 job@bilibili.com</p>
+						<p class="keyword"><span>二次元</span><span>带薪休假</span><span>免费零食</span><span>妹子很多</span><span>不歧视异性恋</span><span>程序员鼓励师</span><span>泷泽萝拉</span></p>
+					</div>
+
+					<div class="about-cop">
+						<p>bilibili弹幕网，也被称为哔哩哔哩或B站，是中国极具影响力的一个ACG相关的弹幕视频分享网站。该网站于2009年6月26日创建，旨在为用户提供一个更好、更稳定的弹幕视频分享网站。 </p>
+						<p>目前B站注册用户超过3000万,相关数据还在不断上升中。 </p>
+						<p>除视频分享业务以外，bilibili也致力于ACG文化的传播、合作。2014年9月20日在上海国际体操中心举办的第二届Bilibili Marco Link活动中，bilibili邀请了富永TOMMY弘明、钢兵、松下、幽闭星光、yanakiku等日方嘉宾，同中方嘉宾一起，为全场3000名观众带来了一场动漫盛会。同时，bilibili主站也对该活动进行了全场直播。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PC端 -->
+		<div class="recruit-pc-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-9 job-side">
+						<div class="baseinfo">
+							<div class="push-recruit">
+								<h4>该公司职位</h4>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<a href="#" class="push-job">
+											<h4>网页设计师</h4>
+											<p>深圳 | 3k~5k</p>
+										</a>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<a href="#" class="push-job">
+											<h4>网页设计师</h4>
+											<p>深圳 | 3k~5k</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-3 cop-side">
+						<div class="thumbnail">
+							<div class="img" style="background-image:url(img/bilibili-logo.jpg);"></div>
+							<div class="caption">
+								<h4>上海幻电信息技术有限公司</h4>
+								<p>地点 上海市浦东新区国际航运金融大厦</p>
+								<p>E-MAIL job@bilibili.com</p>
+								<p>联系电话 job@bilibili.com</p>
+							</div>
+							<p class="tag">
+								<span>二次元</span>
+								<span>带薪休假</span>
+								<span>免费零食</span>
+								<span>妹子很多</span>
+								<span>不歧视异性恋</span>
+								<span>程序员鼓励师</span>
+								<span>花泽香菜</span>
+								<span>崔成国</span>
+								<span>姚明</span>
+							</p>
+							<div class="about-the-cop">
+								<p>bilibili弹幕网，也被称为哔哩哔哩或B站，是中国极具影响力的一个ACG相关的弹幕视频分享网站。该网站于2009年6月26日创建，旨在为用户提供一个更好、更稳定的弹幕视频分享网站。 </p>
+								<p>目前B站注册用户超过3000万,相关数据还在不断上升中。 </p>
+								<p>除视频分享业务以外，bilibili也致力于ACG文化的传播、合作。2014年9月20日在上海国际体操中心举办的第二届Bilibili Marco Link活动中，bilibili邀请了富永TOMMY弘明、钢兵、松下、幽闭星光、yanakiku等日方嘉宾，同中方嘉宾一起，为全场3000名观众带来了一场动漫盛会。同时，bilibili主站也对该活动进行了全场直播。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.2.1.4.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/swiper.3.1.7.jquery.min.js"></script>
+		<script src="js/jquery.mmenu.min.all.js"></script>
+		<script src="js/default.js"></script>
+	</body>
+</html>

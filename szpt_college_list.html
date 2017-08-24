@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>招聘季</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/swiper.3.1.7.min.css" rel="stylesheet">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- 专题页面样式 -->
+		<link href="css/college_list.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+		<nav class="navbar navbar-default recruit-navbar recruit-navbar-pc">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-logo" href="#">招聘季</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">校招</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+
+		<nav class="navbar navbar-default nav-searchbar opacity" style="display:none;">
+			<div class="container">
+				<div class="searchbar">
+			    	<form class="form-group">
+				    	<div class="input-group">
+				    		<input type="text" class="form-control" placeholder="请输入职业、公司、学院或专业名称">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><i class="iconfont">&#xe600;</i></button>
+							</span>
+				    	</div>
+			    	</form>
+		    	</div>
+			</div>
+		</nav>
+
+		<div class="home-banner">
+			<nav class="navbar navbar-default recruit-navbar recruit-navbar-mobile">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a href="#indexNav" type="button" class="navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-logo" href="#">招聘季</a>
+						<a class="searchbar-logo" href="#"><i class="iconfont">&#xe600;</i></a>
+					</div>
+				</div><!-- /.container -->
+			</nav>
+			<nav id="indexNav" class="indexnav">
+				<ul class="indexnav-ul">
+					<li class="login-modal">
+						<a href="login.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img"></div>
+							</div>
+							<div class="media-body">
+								<h5>游客</h5>
+								<p>登录 / 注册</p>
+							</div>
+						</a>
+					</li>
+					<li class="user-modal" style="display:none;">
+						<a href="searchpage.html" class="media profile-user">
+							<div class="media-left">
+								<div class="portel-img" style="background-image:url(img/portal.jpg)"></div>
+							</div>
+							<div class="media-body">
+								<h5>刘华清</h5>
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+					<li><a href="index.html">校招</a></li>
+				</ul>
+			</nav>
+
+			<div class="swiper-container swiper-home">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide swiper1">
+			        	<a href="#" style="background-image:url(img/banner1.jpg);"></a>
+			        </div>
+			        <div class="swiper-slide swiper2">
+			        	<a href="#" style="background-image:url(img/banner2.jpg);"></a>
+			        </div>
+			        <div class="swiper-slide swiper3">
+			        	<a href="#" style="background-image:url(img/banner3.jpg);"></a>
+			        </div>
+			    </div>
+
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<!-- PC端页面 -->
+		<div class="container home-cop">
+			<div class="page-haeder">
+				<h4>深职院2015年校园招聘时间表</h4>
+				<p>数据仅供参考，实际时间以当天安排为准。</p>
+			</div>
+
+			<div class="recruitment-college-time">
+				<div class="row">
+					<h4 class="recruitment-day">11月18日</h4>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/szptlogo.png);"></div>
+							<div class="caption">
+								<h4>深圳职业技术学院校园招聘</h4>
+								<p>西丽湖校区体育馆主馆</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<h4 class="recruitment-day">11月25日</h4>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/qiche.png);"></div>
+							<div class="caption">
+								<h4>汽车学院</h4>
+								<p>西丽湖校区羽毛球馆</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/chuanbo.png);"></div>
+							<div class="caption">
+								<h4>传播工程学院</h4>
+								<p>留仙洞校区知行园A座</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<h4 class="recruitment-day">12月2日</h4>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/guanli.png);"></div>
+							<div class="caption">
+								<h4>管理学院</h4>
+								<p>留仙洞校区四方广场</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/jidian.png);"></div>
+							<div class="caption">
+								<h4>机电学院</h4>
+								<p>西丽湖校区体育馆副馆</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/jianhuan.png);"></div>
+							<div class="caption">
+								<h4>建筑与环境工程学院</h4>
+								<p>西丽湖校区体育馆主馆</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<h4 class="recruitment-day">12月9日</h4>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/dianxin.png);"></div>
+							<div class="caption">
+								<h4>电子与通信工程学院</h4>
+								<p>西丽湖校区大运广场</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/donghua.png);"></div>
+							<div class="caption">
+								<h4>数字创意与动画学院</h4>
+								<p>留仙洞校区知行园A座</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/jingji.png);"></div>
+							<div class="caption">
+								<h4>经济学院</h4>
+								<p>留仙洞校区四方广场、灯光篮球场</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/waiyu.png);"></div>
+							<div class="caption">
+								<h4>外语学院</h4>
+								<p>留仙洞校区四方广场、灯光篮球场</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<h4 class="recruitment-day">12月16日</h4>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/yingyongxing.png);"></div>
+							<div class="caption">
+								<h4>应用型本科校园专场招聘会</h4>
+								<p>西丽湖校区体育馆副馆</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/jisuanji.png);"></div>
+							<div class="caption">
+								<h4>计算机工程学院</h4>
+								<p>西丽湖校区大运广场</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/huasheng.png);"></div>
+							<div class="caption">
+								<h4>化生学院</h4>
+								<p>留仙洞校区四方广场</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<h4 class="recruitment-day">12月23日</h4>
+					<div class="col-lg-3 col-md-3 col-sm-4 recruitment-college">
+						<a href="#" class="thumbnail">
+							<div class="college-logo" style="background-image:url(img/yishu.png);"></div>
+							<div class="caption">
+								<h4>艺术设计学院</h4>
+								<p>留仙洞校区四方广场</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 移动端页面 -->
+		<div class="container home-cop-mobile">
+			<div class="page-haeder">
+				<h4>深职院2015年院招时间表</h4>
+				<p>数据仅供参考，实际时间以当天安排为准。</p>
+			</div>
+
+			<div class="recruitment-fair">
+				<ul class="meida-list">
+					<li class="media recruitment-time-list">
+						<div class="media-left time-line">
+							<span></span>
+						</div>
+						<div class="media-body">
+							<div class="time-point">
+								<div class="date-format date-format-one">2015年<span class="the-month">11</span>月<span class="the-day">18</span>日</div>
+							</div>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/qiche.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">深圳职业技术学院校园招聘</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区体育馆主馆</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/chuanbo.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">传播工程学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区知行园A座</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="media recruitment-time-list">
+						<div class="media-left time-line">
+							<span></span>
+						</div>
+						<div class="media-body">
+							<div class="time-point">
+								<div class="date-format date-format-one">2015年<span class="the-month">11</span>月<span class="the-day">25</span>日</div>
+							</div>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/qiche.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">汽车与交通学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区羽毛球馆</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/chuanbo.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">传播工程学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区知行园A座</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="media recruitment-time-list">
+						<div class="media-left time-line">
+							<span></span>
+						</div>
+						<div class="media-body">
+							<div class="time-point">
+								<div class="date-format date-format-two">2015年<span class="the-month">12</span>月<span class="the-day">2</span>日</div>
+							</div>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/guanli.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">管理学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区四方广场</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jidian.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">机电工程学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区体育馆副馆</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jianhuan.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">建筑与环境工程学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区体育馆主馆</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="media recruitment-time-list">
+						<div class="media-left time-line">
+							<span></span>
+						</div>
+						<div class="media-body">
+							<div class="time-point">
+								<div class="date-format date-format-three">2015年<span class="the-month">12</span>月<span class="the-day">8</span>日</div>
+							</div>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/dianxin.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">电子与通信工程学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区大运广场</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/donghua.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">数字创意与动画学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区知行园A座</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jingji.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">经济学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区四方广场、灯光篮球场</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/waiyu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">外语学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区四方广场、灯光篮球场</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="media recruitment-time-list">
+						<div class="media-left time-line">
+							<span></span>
+						</div>
+						<div class="media-body">
+							<div class="time-point">
+								<div class="date-format date-format-four">2015年<span class="the-month">12</span>月<span class="the-day">16</span>日</div>
+							</div>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/yingyongxing.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">应用型本科校园专场</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区体育馆副馆</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/jisuanji.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">计算机工程学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 西丽湖校区大运广场</p>
+								</div>
+							</a>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/huasheng.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">化生学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区四方广场</p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="media recruitment-time-list">
+						<div class="media-left time-line">
+							<span></span>
+						</div>
+						<div class="media-body">
+							<div class="time-point">
+								<div class="date-format date-format-five">2015年<span class="the-month">12</span>月<span class="the-day">23</span>日</div>
+							</div>
+							<a href="#" class="media college-recruiting">
+								<div class="media-left">
+									<div class="img" style="background-image:url(img/yishu.png);"></div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">艺术设计学院</h4>
+									<p><i class="iconfont">&#xe601;</i> 留仙洞校区四方广场</p>
+								</div>
+							</a>
+						</div>
+					</li>			
+				</ul>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="loginpcmodal" style="display:none;">
+			<div class="loginpcmodal-tr">
+				<div class="modal fade loginpcbox" id="loginpcModal" tabindex="-1" role="dialog" aria-labelledby="loginpcModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<form>
+								<div class="modal-header">
+									<button type="button" class="close jqcolse" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+								</div>
+								<div class="modal-footer">
+									<!-- <button type="button" class="btn btn-default colsebtn jqcolse" data-dismiss="modal">Close</button> -->
+									<button type="button" class="btn btn-primary savebtn jqcolse">登录</button>
+									<a href="#" class="setupbtn"><i class="iconfont">&#xe605;</i> 我要注册</a>
+								</div>
+							</form>
+							<div class="pctowechat">
+								<p>打开微信扫一扫授权，注册并完善用户信息</p>
+								<div class="loginqrcode"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 职位模版 -->
+		<div class="jobhtml" style="display:none;">
+			<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 recruit-job">
+				<a href="{0}" class="job-card">
+					<div class="media">
+						<div class="media-left">
+							<div class="img" style="background-image:url({1});"></div>
+						</div>
+						<div class="media-body">
+							<h4>{2}</h4>
+							<p>{3}</p>
+						</div>
+					</div>
+					<p>{4} | {5}</p>
+				</a>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.2.1.4.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/swiper.3.1.7.jquery.min.js"></script>
+		<script src="js/jquery.mmenu.min.all.js"></script>
+		<script src="js/default.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var todate = new Date();
+				if($(".date-format-one .the-day").text() == todate.getDate()){
+					$(".date-format-one").attr("style","background-color:#0066cc;color:#fff;");
+				}else{
+				}
+				if($(".date-format-two .the-day").text() == todate.getDate()){
+					$(".date-format-two").attr("style","background-color:#0066cc;color:#fff;");
+				}else{
+				}
+				if($(".date-format-three .the-day").text() == todate.getDate()){
+					$(".date-format-three").attr("style","background-color:#0066cc;color:#fff;");
+				}else{
+				}
+				if($(".date-format-four .the-day").text() == todate.getDate()){
+					$(".date-format-four").attr("style","background-color:#0066cc;color:#fff;");
+				}else{
+				}
+				if($(".date-format-five .the-day").text() == todate.getDate()){
+					$(".date-format-five").attr("style","background-color:#0066cc;color:#fff;");
+				}else{
+				}
+
+				$(".college-recruiting .media-left .img").width($(".college-recruiting .media-left").height());
+				$(".college-recruiting .media-left .img").height($(".college-recruiting .media-left").height());
+
+				$(".college-logo").height($(".college-logo").width());
+				
+				$(window).resize(function(){
+					$(".college-recruiting .media-left .img").width($(".college-recruiting .media-left").height());
+					$(".college-recruiting .media-left .img").height($(".college-recruiting .media-left").height());
+					$(".college-logo").height($(".college-logo").width());
+				});
+			});
+		</script>
+	</body>
+</html>
